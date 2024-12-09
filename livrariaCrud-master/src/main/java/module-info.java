@@ -3,13 +3,18 @@ module edu.Livraria {
     requires javafx.fxml;
     requires javafx.web;
 
+    requires com.almasb.fxgl.core;
+    requires com.almasb.fxgl.scene;
+    requires com.almasb.fxgl.entity;
+    requires com.almasb.fxgl.io;
+    requires com.almasb.fxgl.gameplay;
     requires com.almasb.fxgl.all;
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
     requires net.synedra.validatorfx;
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
-    requires eu.hansolo.tilesfx;
+    //requires eu.hansolo.tilesfx;
     requires jdk.compiler;
     requires org.hibernate.orm.core;
     //requires java.persistence;
@@ -17,8 +22,6 @@ module edu.Livraria {
     requires jakarta.persistence;
     requires static lombok;
     requires java.sql; // Adicione esta linha
-    // requires org.hibernate.orm.core; // Módulo do Hibernate
-    //requires java.naming; // Adicione essa linha
     //requires org.hibernate.orm.core;
     //requires jakarta.persistence;
 
@@ -29,4 +32,5 @@ module edu.Livraria {
     exports edu.Livraria.model.services;
 
     exports edu.Livraria.controller to javafx.fxml;
+    exports edu.Livraria.util;
 }

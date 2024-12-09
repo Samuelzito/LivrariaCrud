@@ -2,10 +2,13 @@ package edu.Livraria.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
+
+import java.io.IOException;
 
 public class MenuController {
 
@@ -14,17 +17,20 @@ public class MenuController {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/MainView.fxml"));
             Parent root = loader.load();
-            Stage stage = new Stage();
-            stage.setTitle("Gerenciar Livros");
-            stage.setScene(new Scene(root));
+
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
             stage.show();
-        } catch (Exception e) {
+        } catch (IOException e) {
             e.printStackTrace();
+            System.err.println("Erro ao carregar MainView.fxml: " + e.getMessage());
         }
     }
 
     @FXML
-    public void sairAplicacao(ActionEvent event) {
-        System.exit(0); // Encerra a aplicação.
+    public void sairDaAplicacao() {
+        System.exit(0);
     }
-}
+
+    }
