@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 
 <VBox alignment="TOP_CENTER" spacing="10" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.Livraria.controller.LivroController">
-    <TableView fx:id="tablaLivros" prefHeight="409.0" prefWidth="1261.0">
+    <TableView fx:id="tabelaLivros" prefHeight="409.0" prefWidth="1261.0">
         <columns>
             <TableColumn fx:id="colunaTitulo" text="Título" />
             <TableColumn fx:id="colunaAutor" text="Autor" />

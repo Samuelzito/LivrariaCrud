@@ -2,7 +2,6 @@ package edu.Livraria;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
@@ -11,13 +10,11 @@ public class MainApp extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            // Carregando o arquivo FXML
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/MainView.fxml"));
-            Parent root = loader.load();
 
-            // Configurando o título da janela
-            primaryStage.setTitle("Sistema de Gerenciamento de Livros");
-            primaryStage.setScene(new Scene(root));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/MenuView.fxml"));
+            Scene scene = new Scene(loader.load());
+            primaryStage.setTitle("Menu Principal");
+            primaryStage.setScene(scene);
             primaryStage.show();
         } catch (Exception e) {
             e.printStackTrace();
