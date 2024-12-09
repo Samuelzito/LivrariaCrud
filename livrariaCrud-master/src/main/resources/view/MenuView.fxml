@@ -5,13 +5,13 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" prefHeight="414.0" prefWidth="553.0" spacing="20" style="-fx-background-color: linear-gradient(to bottom, #ffffff, #e0e0e0);" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="edu.Livraria.controller.MenuController">
+<VBox alignment="CENTER" prefHeight="414.0" prefWidth="553.0" spacing="20" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="edu.Livraria.controller.MenuController">
     <children>
         <Label alignment="TOP_CENTER" prefHeight="30.0" prefWidth="168.0" style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Menu Principal" VBox.vgrow="SOMETIMES">
          <rotationAxis>
             <Point3D x="1.0" y="1.0" z="1.0" />
          </rotationAxis></Label>
-        <Button fx:id="btnGerenciarLivros" onAction="#abrirTelaGerenciarLivros" prefHeight="28.0" prefWidth="116.0" text="Gerenciar Livros" style="-fx-background-color: #007bff; -fx-text-fill: white; -fx-border-radius: 10; -fx-background-radius: 10;" />
-        <Button fx:id="btnSair" onAction="#sairDaAplicacao" text="Sair" style="-fx-background-color: #dc3545; -fx-text-fill: white; -fx-border-radius: 10; -fx-background-radius: 10;" />
+        <Button fx:id="btnGerenciarLivros" onAction="#abrirTelaGerenciarLivros" prefHeight="28.0" prefWidth="116.0" text="Gerenciar Livros" />
+        <Button fx:id="btnSair" onAction="#sairAplicacao" text="Sair" />
     </children>
 </VBox>
