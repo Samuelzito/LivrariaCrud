@@ -1,4 +1,4 @@
-module edu.Livraria {
+module edu.livraria {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
@@ -7,20 +7,22 @@ module edu.Livraria {
     requires com.dlsc.formsfx;
     requires net.synedra.validatorfx;
     requires org.kordamp.ikonli.javafx;
-    requires org.kordamp.bootstrapfx.core;
-    requires eu.hansolo.tilesfx;
+    //requires org.kordamp.bootstrapfx.core;
+    //requires eu.hansolo.tilesfx;
+    requires com.almasb.fxgl.all;
+    requires jdk.compiler;
     requires org.hibernate.orm.core;
+    //requires java.persistence;
+    requires java.naming;
     requires jakarta.persistence;
-    requires lombok; // static não é necessário se configurado corretamente no build
+    requires static lombok;
     requires java.sql;
 
-    // Abrindo pacotes para frameworks e bibliotecas específicas
-    opens edu.Livraria.model.entity to org.hibernate.orm.core;
-    opens edu.Livraria.controller to javafx.fxml;
-
-    // Exportando pacotes do projeto
+    opens edu.livraria.livraria to org.hibernate.orm.core;
     exports edu.Livraria.model.entity;
+    opens edu.livraria.controller to javafx.fxml;
     exports edu.Livraria;
     exports edu.Livraria.model.services;
-    exports edu.Livraria.controller;
+
+    exports edu.Livraria.controller to javafx.fxml;
 }
