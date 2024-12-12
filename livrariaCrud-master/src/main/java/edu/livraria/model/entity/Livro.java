@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import javafx.beans.property.*;
 
 @Entity
 public class Livro {
@@ -17,7 +18,31 @@ public class Livro {
     private int anoPublicacao;
     private String genero;
 
-    // Getters e Setters
+    // Construtor padrão
+    public Livro() {}
+
+    // Propriedades JavaFX para TableView
+    public LongProperty idProperty() {
+        return new SimpleLongProperty(id);
+    }
+
+    public StringProperty tituloProperty() {
+        return new SimpleStringProperty(titulo);
+    }
+
+    public StringProperty autorProperty() {
+        return new SimpleStringProperty(autor);
+    }
+
+    public IntegerProperty anoPublicacaoProperty() {
+        return new SimpleIntegerProperty(anoPublicacao);
+    }
+
+    public StringProperty generoProperty() {
+        return new SimpleStringProperty(genero);
+    }
+
+    // Getters e Setters padrão
     public Long getId() {
         return id;
     }

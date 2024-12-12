@@ -10,7 +10,7 @@ public class LivroDAO {
 
     private EntityManager em;
 
-    public LivroDAO(EntityManager em) {
+    public LivroDAO() {
         this.em = em;
     }
 

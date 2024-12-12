@@ -10,8 +10,5 @@
         <module name="Livraria" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Livraria" target="18" />
-    </bytecodeTargetLevel>
   </component>
 </project>

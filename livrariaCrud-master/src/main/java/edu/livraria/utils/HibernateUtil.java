@@ -2,11 +2,13 @@ package edu.livraria.utils;
 
 import edu.livraria.model.entity.Livro;
 import lombok.SneakyThrows;
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
+import jakarta.persistence.EntityManager;
 
 import java.io.IOException;
 import java.util.Properties;
@@ -26,7 +28,6 @@ public class HibernateUtil {
             registry = buildRegistry(hibernateProperties);
             sessionFactory = buildSessionFactory(registry);
         } catch (Exception e) {
-            //log.error("Failed to create SessionFactory", e);
             destroyRegistry();
             throw new ExceptionInInitializerError(e);
         }
@@ -52,7 +53,6 @@ public class HibernateUtil {
     private static SessionFactory buildSessionFactory(StandardServiceRegistry registry) {
         return new MetadataSources(registry)
                 .addAnnotatedClass(Livro.class)
-                // Add other entity classes here
                 .buildMetadata()
                 .buildSessionFactory();
     }
@@ -62,6 +62,11 @@ public class HibernateUtil {
             throw new IllegalStateException("SessionFactory has not been initialized");
         }
         return sessionFactory;
+    }
+
+    public static EntityManager getEntityManager() {
+        Session session = getSessionFactory().openSession();
+        return session.unwrap(EntityManager.class);
     }
 
     private static void destroyRegistry() {
@@ -76,10 +81,8 @@ public class HibernateUtil {
             sessionFactory.close();
         }
         destroyRegistry();
-        //log.info("Hibernate SessionFactory and Registry have been shut down");
     }
 
-    // Prevent instantiation
     private HibernateUtil() {
         throw new UnsupportedOperationException("Utility class");
     }

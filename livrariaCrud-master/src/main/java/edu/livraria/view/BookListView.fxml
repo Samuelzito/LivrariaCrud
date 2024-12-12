@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.livraria.controller.BookListController">
+    <children>
+        <VBox spacing="10" alignment="CENTER" prefWidth="800" prefHeight="600">
+            <Label text="Listagem de Livros" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+            <TableView fx:id="tableBooks" prefHeight="400" prefWidth="700">
+                <columns>
+                    <TableColumn text="ID" fx:id="colId" prefWidth="100" />
+                    <TableColumn text="Título" fx:id="colTitulo" prefWidth="200" />
+                    <TableColumn text="Autor" fx:id="colAutor" prefWidth="200" />
+                    <TableColumn text="Ano" fx:id="colAno" prefWidth="100" />
+                    <TableColumn text="Gênero" fx:id="colGenero" prefWidth="100" />
+                </columns>
+            </TableView>
+            <HBox spacing="10">
+                <Button text="Editar" onAction="#editBook" />
+                <Button text="Excluir" onAction="#deleteBook" />
+            </HBox>
+        </VBox>
+    </children>
+</AnchorPane>

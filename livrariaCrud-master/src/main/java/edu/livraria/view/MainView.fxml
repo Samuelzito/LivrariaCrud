@@ -3,27 +3,29 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.livraria.controller.MainController">
-   <content>
-      <VBox prefHeight="200.0" prefWidth="597.0">
-         <children>
-            <MenuBar>
-              <menus>
+<VBox xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.livraria.controller.MainController" prefHeight="600.0" prefWidth="800.0">
+    <children>
+        <!-- Menu Bar -->
+        <MenuBar>
+            <menus>
                 <Menu mnemonicParsing="false" text="Cadastros">
-                  <items>
-                    <MenuItem mnemonicParsing="false" onAction="#menuCadastrarLivro" text="Livro" />
-                  </items>
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#menuCadastrarLivro" text="Cadastrar Livro" />
+                        <MenuItem mnemonicParsing="false" onAction="#menuListarLivros" text="Listar Livros" />
+                    </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="Help">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="About" />
-                  </items>
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#menuHelp" text="Sobre" />
+                    </items>
                 </Menu>
-              </menus>
-            </MenuBar>
-         </children></VBox>
-   </content>
-</ScrollPane>
+            </menus>
+        </MenuBar>
+
+        <!-- Área para carregar as outras telas -->
+        <AnchorPane fx:id="contentArea" prefHeight="400.0" prefWidth="600.0" />
+    </children>
+</VBox>
