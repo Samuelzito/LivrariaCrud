@@ -18,11 +18,11 @@ module edu.livraria {
     requires static lombok;
     requires java.sql;
 
-    opens edu.livraria.livraria to org.hibernate.orm.core;
-    exports edu.Livraria.model.entity;
+    opens edu.livraria.model.entity to org.hibernate.orm.core;
+    exports edu.livraria.model.entity;
     opens edu.livraria.controller to javafx.fxml;
-    exports edu.Livraria;
-    exports edu.Livraria.model.services;
+    exports edu.livraria;
+    exports edu.livraria.model.services;
 
-    exports edu.Livraria.controller to javafx.fxml;
+    exports edu.livraria.controller to javafx.fxml;
 }
