@@ -14,7 +14,7 @@ public class MainController {
      * Abre a tela de cadastro de livros.
      */
     @FXML
-    public void menuCadastrarLivro() {
+    public void menuCadastrarLivro() throws Exception {
         System.out.println("Abrindo tela de cadastro de livros...");
         AnchorPane formView = PathFXML.loadFXML("BookFormView.fxml");
         contentArea.getChildren().setAll(formView);
@@ -24,7 +24,7 @@ public class MainController {
      * Abre a tela de listagem de livros.
      */
     @FXML
-    public void menuListarLivros() {
+    public void menuListarLivros() throws Exception {
         System.out.println("Abrindo tela de listagem de livros...");
         AnchorPane listView = PathFXML.loadFXML("BookListView.fxml");
         contentArea.getChildren().setAll(listView);

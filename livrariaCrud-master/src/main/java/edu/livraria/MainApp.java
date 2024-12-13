@@ -23,7 +23,7 @@ public class MainApp extends Application {
         Parent root = fxmlLoader.load(new FileInputStream(PathFXML.pathBase() + "\\MainView.fxml"));
         Scene scene = new Scene(root, 800, 550);
 
-        // Configuração do stage
+
         primaryStage.setTitle("Menu Principal");
         primaryStage.setScene(scene);
         primaryStage.show();

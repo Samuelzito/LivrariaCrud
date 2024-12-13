@@ -6,19 +6,21 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.livraria.controller.BookFormController">
-    <children>
-        <VBox alignment="CENTER" layoutY="-6.0" prefHeight="397.0" prefWidth="516.0" spacing="10">
-            <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Cadastro de Livro" />
-            <TextField fx:id="txtTitulo" promptText="Título" />
-            <TextField fx:id="txtAutor" promptText="Autor" />
-            <TextField fx:id="txtAnoPublicacao" promptText="Ano de Publicação" />
-            <TextField fx:id="txtGenero" promptText="Gênero" />
-            <HBox alignment="CENTER" spacing="10">
-                <Button onAction="#saveBook" text="Salvar" />
-                <Button onAction="#cancelAction" text="Cancelar" />
-            </HBox>
-        </VBox>
-    </children>
+    <VBox alignment="CENTER" prefHeight="350.0" prefWidth="767.0" spacing="10">
+        <Label style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #333;" text="Cadastro de Livro" textFill="#575757">
+         <font>
+            <Font name="Poor Richard" size="16.0" />
+         </font></Label>
+        <TextField fx:id="txtTitulo" promptText="Título" />
+        <TextField fx:id="txtAutor" promptText="Autor" />
+        <TextField fx:id="txtAnoPublicacao" promptText="Ano de Publicação" />
+        <TextField fx:id="txtGenero" promptText="Gênero" />
+        <HBox alignment="CENTER" spacing="10">
+            <Button onAction="#saveBook" text="Salvar" />
+            <Button onAction="#cancelAction" text="Cancelar" />
+        </HBox>
+    </VBox>
 </AnchorPane>
