@@ -18,6 +18,7 @@
             <HBox spacing="10">
                 <Button text="Editar" onAction="#editBook" />
                 <Button text="Excluir" onAction="#deleteBook" />
+                <Button text="Excluir" onAction="#deleteBook" />
             </HBox>
         </VBox>
     </children>
