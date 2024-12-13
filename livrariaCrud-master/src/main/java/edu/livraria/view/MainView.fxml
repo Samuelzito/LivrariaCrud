@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.livraria.controller.MainController" prefHeight="600.0" prefWidth="800.0">
+<VBox prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #00000000000;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.livraria.controller.MainController">
     <children>
         <!-- Menu Bar -->
         <MenuBar>

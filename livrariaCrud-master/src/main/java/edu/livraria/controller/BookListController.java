@@ -3,15 +3,20 @@ package edu.livraria.controller;
 import edu.livraria.model.entity.Livro;
 import edu.livraria.model.services.LivroServices;
 import edu.livraria.utils.HibernateUtil;
+import edu.livraria.utils.PathFXML;
 import jakarta.persistence.EntityManager;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.ButtonType;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.List;
 
 public class BookListController {
@@ -33,6 +38,7 @@ public class BookListController {
 
     @FXML
     private TableColumn<Livro, String> colGenero;
+
 
     private final EntityManager em = HibernateUtil.getEntityManager();
     private final LivroServices livroServices = new LivroServices(em);
@@ -57,31 +63,54 @@ public class BookListController {
         tableBooks.setItems(livros);
     }
 
-    @FXML
-    public void editBook() {
+    public void editBook() throws IOException {
         Livro livroSelecionado = tableBooks.getSelectionModel().getSelectedItem();
-        if (livroSelecionado != null) {
-            System.out.println("Editar livro: " + livroSelecionado.getTitulo());
-            // Abrir tela de edição (integração futura)
-        } else {
-            showAlert("Nenhum livro selecionado para edição.");
+
+        if (livroSelecionado == null) {
+            throw new IllegalStateException("Nenhum livro selecionado para edição.");
         }
+
+        // Caminho absoluto ou dinâmico para o arquivo FXML
+        String fxmlPath = PathFXML.pathBase() + "\\BookEditView.fxml";
+
+        // Carregar o arquivo FXML usando FileInputStream
+        FXMLLoader loader = new FXMLLoader();
+        Parent root = loader.load(new FileInputStream(fxmlPath));
+
+        // Configura o controlador da tela de edição
+        BookEditController controller = loader.getController();
+        controller.setLivro(livroSelecionado);
+
+        // Configura e exibe a nova janela como modal
+        Stage stage = new Stage();
+        stage.setTitle("Editar Livro");
+        stage.setScene(new Scene(root));
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.showAndWait();
+
+        // Atualiza a tabela após a edição
+        loadBooks();
     }
+
+
 
     @FXML
     public void deleteBook() {
         Livro livroSelecionado = tableBooks.getSelectionModel().getSelectedItem();
-        if (livroSelecionado != null) {
-            Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Deseja realmente excluir o livro?", ButtonType.YES, ButtonType.NO);
-            if (alert.showAndWait().orElse(ButtonType.NO) == ButtonType.YES) {
-                livroServices.excluir(livroSelecionado.getId());
-                loadBooks();
-                System.out.println("Livro excluído com sucesso!");
-            }
-        } else {
+
+        if (livroSelecionado == null) {
             showAlert("Nenhum livro selecionado para exclusão.");
+            return;
+        }
+
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Deseja realmente excluir o livro?", ButtonType.YES, ButtonType.NO);
+        if (alert.showAndWait().orElse(ButtonType.NO) == ButtonType.YES) {
+            livroServices.excluir(livroSelecionado.getId());
+            loadBooks();
+            System.out.println("Livro excluído com sucesso!");
         }
     }
+
 
     private void showAlert(String message) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);

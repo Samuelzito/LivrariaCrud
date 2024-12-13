@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="24bac80d-f7f4-4c63-a3c1-a41177ecbe82" name="Changes" comment="atualização funcionandoo uhuuuuuuuuuuuu">
+      <change afterPath="$PROJECT_DIR$/livrariaCrud-master/src/main/java/edu/livraria/controller/BookEditController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/livrariaCrud-master/src/main/java/edu/livraria/view/BookEditView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/livrariaCrud-master/src/main/java/edu/livraria/view/BookForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/livrariaCrud-master/src/main/java/edu/livraria/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/livrariaCrud-master/src/main/java/edu/livraria/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/livrariaCrud-master/src/main/java/edu/livraria/controller/BookFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/livrariaCrud-master/src/main/java/edu/livraria/controller/BookFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/livrariaCrud-master/src/main/java/edu/livraria/controller/BookListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/livrariaCrud-master/src/main/java/edu/livraria/controller/BookListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/livrariaCrud-master/src/main/java/edu/livraria/controller/MenuController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/livrariaCrud-master/src/main/java/edu/livraria/utils/PathFXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/livrariaCrud-master/src/main/java/edu/livraria/utils/PathFXML.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/livrariaCrud-master/src/main/java/edu/livraria/view/BookFormView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/livrariaCrud-master/src/main/java/edu/livraria/view/BookFormView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/livrariaCrud-master/src/main/java/edu/livraria/view/BookListView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/livrariaCrud-master/src/main/java/edu/livraria/view/BookListView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/livrariaCrud-master/src/main/java/edu/livraria/view/MainView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/livrariaCrud-master/src/main/java/edu/livraria/view/MainView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/livrariaCrud-master/target/classes/edu/livraria/MainApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/livrariaCrud-master/target/classes/edu/livraria/MainApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/livrariaCrud-master/target/classes/edu/livraria/controller/BookFormController.class" beforeDir="false" afterPath="$PROJECT_DIR$/livrariaCrud-master/target/classes/edu/livraria/controller/BookFormController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/livrariaCrud-master/target/classes/edu/livraria/controller/BookListController.class" beforeDir="false" afterPath="$PROJECT_DIR$/livrariaCrud-master/target/classes/edu/livraria/controller/BookListController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/livrariaCrud-master/target/classes/edu/livraria/controller/MenuController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/livrariaCrud-master/target/classes/edu/livraria/utils/PathFXML.class" beforeDir="false" afterPath="$PROJECT_DIR$/livrariaCrud-master/target/classes/edu/livraria/utils/PathFXML.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/livrariaCrud-master/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/livrariaCrud-master/target/classes/module-info.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Samuelzito&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Samuelzito/LivrariaCrud.git&quot;,
+    &quot;accountId&quot;: &quot;8149b31b-2687-4e89-8f42-67175eb63e57&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadSourcesAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2q3AQch5gon3kfhnwLAiCeEbKIu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.MainApp.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Workspace/javafx-sdk-23.0.1/lib&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Super\IdeaProjects\livrariaCrud\livrariaCrud-master" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="24bac80d-f7f4-4c63-a3c1-a41177ecbe82" name="Changes" comment="" />
+      <created>1733880869525</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733880869525</updated>
+      <workItem from="1733880870549" duration="1260000" />
+      <workItem from="1734032255357" duration="3059000" />
+      <workItem from="1734035697004" duration="4104000" />
+      <workItem from="1734048669501" duration="2812000" />
+      <workItem from="1734094842604" duration="1838000" />
+      <workItem from="1734105693019" duration="38000" />
+      <workItem from="1734107873896" duration="8670000" />
+      <workItem from="1734127928611" duration="2967000" />
+      <workItem from="1734130950001" duration="1882000" />
+    </task>
+    <task id="LOCAL-00001" summary="atualização visual">
+      <option name="closed" value="true" />
+      <created>1734039758968</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1734039758968</updated>
+    </task>
+    <task id="LOCAL-00002" summary="atualização funcionandoo uhuuuuuuuuuuuu">
+      <option name="closed" value="true" />
+      <created>1734051353643</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734051353643</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="atualização visual" />
+    <MESSAGE value="atualização funcionandoo uhuuuuuuuuuuuu" />
+    <option name="LAST_COMMIT_MESSAGE" value="atualização funcionandoo uhuuuuuuuuuuuu" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

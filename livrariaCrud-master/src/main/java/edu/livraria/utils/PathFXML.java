@@ -10,7 +10,7 @@ public class PathFXML {
 
     // Define um caminho base absoluto para o projeto
     public static String pathBase() {
-        return "C:/Users/Super/IdeaProjects/LivrariaCrud/livrariaCrud-master/src/main/java/edu/livraria/view";
+        return "C:\\Users\\Super\\IdeaProjects\\LivrariaCrud\\livrariaCrud-master\\src\\main\\java\\edu\\livraria\\view";
     }
 
     // Método para carregar arquivos FXML
